@@ -1,3 +1,3 @@
 # jogosJavascript
 
-##ogos desenvolvidos em javascript. 
+## jogos desenvolvidos em javascript. 
