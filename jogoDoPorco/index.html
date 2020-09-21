@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="m-auto text-center">
+            <h1 class="text-center">Jogo do Porco Solitário</h1>
+            <img class="img-porco img-porco1" src="img/porco.png" alt="porco">
+            <img class="img-porco img-porco2" src="img/porco.png" alt="porco">
+            <img class="img-porco img-porco3" src="img/porco.png" alt="porco">
+            <img class="img-porco img-porco4" src="img/porco.png" alt="porco">
+            <img class="img-porco img-porco5" src="img/porco.png" alt="porco">
+            <p id="jogo">Role o dado e some pontos! Sempre que tirar o número 1 ou parar você perde 1 vida, se escolher
+                parar, acumula todos os pontos temporários, o jogo começa com 5 vidas.</p>
+            <div class="caixa-dado text-center">
+                <img src="img/1.png" class="img-dado my-2">
+            </div>
+        </div>
+        <div class="jogador-carta m-auto text-center">
+            <p> Pontos Temporários: </p>
+            <p id="pontos-temprarios">0</p>
+            <p> Pontos Oficiais: </p>
+            <p id="pontos-oficiais">0</p>
+            <p> Tentativa número: </p>
+            <p id="numero-tentativas">1</p>
+            <p> Maior pontuação: </p>
+            <p id="historico-pontos">0</p>
+        </div>
+        <div class="jogador-botoes m-auto text-center">
+            <a class="btn btn-dark" href="#" onclick="dado.rolaOdado();">Rolar dados</a>
+            <a class="btn btn-dark" href="#" onclick="jogador.parar();">Parar</a>
+        </div>
+    </div>
+</body>
+
+</html>
